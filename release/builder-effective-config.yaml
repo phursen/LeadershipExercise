@@ -1,0 +1,40 @@
+directories:
+  output: release
+  buildResources: build
+appId: com.electricmaze.app
+productName: Electric Maze
+files:
+  - filter:
+      - dist/**/*
+      - electron.js
+      - server.js
+      - package.json
+      - src/config/electric-maze-config-onload.json
+mac:
+  category: public.app-category.games
+  target:
+    - target: dmg
+      arch:
+        - x64
+        - arm64
+    - target: zip
+      arch:
+        - x64
+        - arm64
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+        - ia32
+    - target: portable
+      arch:
+        - x64
+        - ia32
+nsis:
+  oneClick: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+publish: null
+electronVersion: 38.1.0
