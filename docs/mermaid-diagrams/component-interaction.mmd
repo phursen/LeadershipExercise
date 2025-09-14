@@ -1,0 +1,17 @@
+sequenceDiagram
+    participant User
+    participant UI
+    participant Context
+    participant Socket
+    participant Server
+    participant Storage
+    
+    User->>UI: Click maze square
+    UI->>Context: Update local state
+    Context->>Socket: Emit state change
+    Socket->>Server: Send update
+    Server->>Storage: Persist if needed
+    Server->>Socket: Broadcast to all clients
+    Socket->>Context: Receive update
+    Context->>UI: Re-render components
+    UI->>User: Visual feedback

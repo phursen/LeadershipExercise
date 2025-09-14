@@ -1,0 +1,344 @@
+[
+  {
+    "grid": [
+      [
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": true,
+          "isActive": true
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        }
+      ],
+      [
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": false,
+          "isActive": false
+        },
+        {
+          "isPath": false,
+          "isRevealed": true,
+          "isActive": true
+        },
+        {
+          "isPath": true,
+          "isRevealed": true,
+          "isActive": false
+        }
+      ]
+    ],
+    "name": "Auto Save 09-07-2025-_19:24",
+    "createdAt": 1757287475627
+  }
+]

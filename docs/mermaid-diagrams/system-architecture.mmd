@@ -1,0 +1,75 @@
+graph TB
+    subgraph "Client Tier"
+        subgraph "React Application"
+            UI[UI Components]
+            CTX[Context Providers]
+            HOOKS[Custom Hooks]
+            UTILS[Utilities]
+        end
+        
+        subgraph "Client Storage"
+            LS[LocalStorage]
+            CACHE[Browser Cache]
+        end
+    end
+    
+    subgraph "Communication Layer"
+        WS[WebSocket Connection]
+        HTTP[HTTP/REST API]
+        EVENTS[Event System]
+    end
+    
+    subgraph "Server Tier"
+        subgraph "Node.js Server"
+            EXPRESS[Express Server]
+            SOCKET[Socket.IO Server]
+            MIDDLEWARE[Middleware]
+        end
+        
+        subgraph "Server Storage"
+            MEMORY[In-Memory State]
+            FILES[File System]
+        end
+    end
+    
+    subgraph "External Systems"
+        NETWORK[Local Network]
+        DEVICES[Client Devices]
+        ADMIN[Admin Interface]
+    end
+    
+    %% Client connections
+    UI --> CTX
+    CTX --> HOOKS
+    HOOKS --> UTILS
+    UI --> LS
+    UI --> CACHE
+    
+    %% Communication layer
+    UI <--> WS
+    UI <--> HTTP
+    WS <--> EVENTS
+    
+    %% Server connections
+    WS <--> SOCKET
+    HTTP <--> EXPRESS
+    EXPRESS --> MIDDLEWARE
+    SOCKET --> MEMORY
+    EXPRESS --> FILES
+    
+    %% External connections
+    DEVICES --> NETWORK
+    NETWORK --> EXPRESS
+    ADMIN --> UI
+    
+    classDef client fill:#e3f2fd,stroke:#1976d2
+    classDef server fill:#f3e5f5,stroke:#7b1fa2
+    classDef storage fill:#e8f5e8,stroke:#388e3c
+    classDef communication fill:#fff3e0,stroke:#f57c00
+    classDef external fill:#fce4ec,stroke:#c2185b
+    
+    class UI,CTX,HOOKS,UTILS client
+    class EXPRESS,SOCKET,MIDDLEWARE server
+    class LS,CACHE,MEMORY,FILES storage
+    class WS,HTTP,EVENTS communication
+    class NETWORK,DEVICES,ADMIN external

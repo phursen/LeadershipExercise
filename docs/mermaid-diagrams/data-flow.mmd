@@ -1,0 +1,41 @@
+flowchart LR
+    subgraph "Input Sources"
+        USER[User Actions]
+        KEYBOARD[Keyboard Input]
+        NETWORK[Network Events]
+        STORAGE[Stored Configs]
+    end
+    
+    subgraph "Processing Layer"
+        VALIDATION[Input Validation]
+        STATE[State Management]
+        BUSINESS[Business Logic]
+    end
+    
+    subgraph "Output Destinations"
+        UI_UPDATE[UI Updates]
+        NETWORK_SYNC[Network Sync]
+        STORAGE_SAVE[Storage Save]
+        AUDIO[Audio Feedback]
+    end
+    
+    USER --> VALIDATION
+    KEYBOARD --> VALIDATION
+    NETWORK --> VALIDATION
+    STORAGE --> VALIDATION
+    
+    VALIDATION --> STATE
+    STATE --> BUSINESS
+    
+    BUSINESS --> UI_UPDATE
+    BUSINESS --> NETWORK_SYNC
+    BUSINESS --> STORAGE_SAVE
+    BUSINESS --> AUDIO
+    
+    classDef input fill:#e8f5e8
+    classDef process fill:#e3f2fd
+    classDef output fill:#fff3e0
+    
+    class USER,KEYBOARD,NETWORK,STORAGE input
+    class VALIDATION,STATE,BUSINESS process
+    class UI_UPDATE,NETWORK_SYNC,STORAGE_SAVE,AUDIO output

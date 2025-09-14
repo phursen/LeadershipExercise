@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Debug Test</title>
+    <style>
+        body { 
+            background: #121212; 
+            color: white; 
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+        .debug-box {
+            border: 2px solid #90caf9;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <div class="debug-box">
+        <h1>🔍 Debug Test Page</h1>
+        <p>If you can see this, basic HTML is working.</p>
+        <div id="root-test" style="background: #333; padding: 10px; margin: 10px 0;">
+            <p>Root element test area</p>
+        </div>
+    </div>
+    
+    <script>
+        console.log('🔍 Debug: HTML loaded');
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🔍 Debug: DOM ready');
+            const rootTest = document.getElementById('root-test');
+            if (rootTest) {
+                rootTest.innerHTML += '<p style="color: #4caf50;">✅ JavaScript is working</p>';
+                console.log('🔍 Debug: JavaScript executed successfully');
+            }
+        });
+        
+        window.addEventListener('load', () => {
+            console.log('🔍 Debug: Page fully loaded');
+        });
+    </script>
+</body>
+</html>
