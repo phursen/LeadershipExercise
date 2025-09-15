@@ -187,30 +187,33 @@ X · ✓ ✓ ✓ ✓ X ·
 
 2. **Install Dependencies**:
    ```bash
-   # Install client dependencies
    npm install
-   
-   # Install server dependencies
-   cd server
-   npm install
-   cd ..
    ```
 
-3. **Start the Server**:
+3. **Start the Application**:
    ```bash
-   cd server
    npm start
    ```
-   Server will run on `http://localhost:3003`
+   This will start both the server (port 3001) and client (port 3000) simultaneously.
 
-4. **Start the Client** (in a new terminal):
+4. **Access the Application**:
+   Open your browser to `http://localhost:3000`
+
+### Alternative: Run Services Separately
+
+If you need to run the services individually:
+
+1. **Start the Server** (in one terminal):
+   ```bash
+   npm run server
+   ```
+   Server will run on `http://localhost:3001`
+
+2. **Start the Client** (in another terminal):
    ```bash
    npm run dev
    ```
    Client will run on `http://localhost:3000`
-
-5. **Access the Application**:
-   Open your browser to `http://localhost:3000`
 
 ## 🎛️ Control Panel Features
 
@@ -256,13 +259,13 @@ X · ✓ ✓ ✓ ✓ X ·
 
 1. **Black Screen on Load**:
    - Check browser console for errors
-   - Ensure server is running on port 3003
+   - Ensure server is running on port 3001
    - Verify client is accessing localhost:3000
 
 2. **Socket Connection Errors**:
-   - Confirm server is running: `cd server && npm start`
+   - Confirm server is running: `npm run server` or `npm start`
    - Check CORS configuration allows localhost:3000
-   - Verify no firewall blocking port 3003
+   - Verify no firewall blocking port 3001
 
 3. **Grid Not Displaying**:
    - Refresh the page
