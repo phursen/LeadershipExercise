@@ -16,21 +16,14 @@ mac:
     - target: dmg
       arch:
         - x64
-        - arm64
     - target: zip
       arch:
         - x64
-        - arm64
 win:
   target:
-    - target: nsis
-      arch:
-        - x64
-        - ia32
     - target: portable
       arch:
         - x64
-        - ia32
 nsis:
   oneClick: false
   allowToChangeInstallationDirectory: true
